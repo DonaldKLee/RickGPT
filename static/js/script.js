@@ -9,7 +9,7 @@ document.getElementById('chat-form').addEventListener('submit', function(e) {
     const messageInput = document.getElementById('message-input');
     const messageText = messageInput.value.trim();
     if (messageText !== '') {
-        appendMessage('You', messageText, "https://qph.cf2.quoracdn.net/main-qimg-2b21b9dd05c757fe30231fac65b504dd");
+        appendMessage('You', messageText, "static/images/user.jpg");
         messageInput.value = '';
 
         // Implement backend logic here (e.g., sending message to server or AI model)
@@ -48,7 +48,7 @@ document.getElementById('chat-form').addEventListener('submit', function(e) {
         ⠀⠀⠀⠀⠀⠀⣡⣿⣿⣿⣿⡗⣮⢻⣽⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀`
 
 
-        appendTypingMessage('ChatGPT', responseText, "https://static.vecteezy.com/system/resources/thumbnails/021/059/825/small_2x/chatgpt-logo-chat-gpt-icon-on-green-background-free-vector.jpg");
+        appendTypingMessage('ChatGPT', responseText, "static/images/chatgpt-green-logo.jpg");
     }
 });
 
