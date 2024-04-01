@@ -10,6 +10,35 @@ body {
     overflow-y: hidden;
 }
 
+/* Updated volume modal styles */
+.volume-modal {
+    position: fixed;
+    background: rgba(23, 23, 23, 0.8); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999; /* Ensure it's above other content */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease; /* Fade-in/out animation */
+    color: white;
+    width: 200px; /* Set width */
+    height: 100px; /* Set height */
+    border-radius: 15px; /* Rounded corners */
+    padding: 10px; /* Padding inside the modal */
+}
+
+.volume-modal.show {
+    opacity: 1; /* Show the modal */
+}
+
+.volume-modal-content {
+    text-align: center;
+    width: 100%; /* Make content width 100% of modal */
+}
+
 /* Hide the default scrollbar for webkit browsers */
 ::-webkit-scrollbar {
     width: 12px;

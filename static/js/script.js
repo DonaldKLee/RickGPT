@@ -64,7 +64,34 @@ function appendMessage(user, text, img) {
     scrollChatMessagesToBottom(); // Scroll to bottom after adding message
 }
 
+function playAudio() {
+    const modal = document.createElement('div');
+    modal.className = 'volume-modal';
+    modal.textContent = 'Turn Sound On';
+    document.body.appendChild(modal);
+
+    // Play audio
+    const audio = new Audio('static/rickroll-sound.mp3');
+    audio.play();
+
+    // Show modal with fade-in animation
+    setTimeout(function() {
+        modal.classList.add('show');
+    }, 100); // Delay showing modal slightly
+
+    // Remove modal after 4 seconds
+    setTimeout(function() {
+        modal.classList.remove('show');
+        // Remove modal from DOM after animation completes
+        setTimeout(function() {
+            modal.remove();
+        }, 500); // Wait for the fade-out animation to complete
+    }, 4000); // 4 seconds in milliseconds
+  }
+
 function appendTypingMessage(user, text, img) {
+    playAudio();
+
     const messagesContainer = document.getElementById('chat-messages');
     const messageDiv = document.createElement('div');
     messageDiv.className = 'message';
