@@ -14,3 +14,4 @@ Future implementations:
 
 
 Rick Roll sound effect from: https://tuna.voicemod.net/sound/0adbccfd-cde6-4302-ae2a-380b7283015b
+Rick Roll ASCII art from: https://emojicombos.com/rick-roll-ascii-art
