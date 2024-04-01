@@ -11,3 +11,6 @@ Future implementations:
 - Save chat history to local storage
 - Send wrong answers (in addition to rick rolling them)
 - anything cool
+
+
+Rick Roll sound effect from: https://tuna.voicemod.net/sound/0adbccfd-cde6-4302-ae2a-380b7283015b
